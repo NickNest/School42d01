@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
+  - blue
+  - yellow
+  - red
+  - white
   layers:
   - Default
   - TransparentFX
@@ -13,13 +17,13 @@ TagManager:
   - Water
   - UI
   - Ground
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Entity
+  - red
+  - blue
+  - yellow
+  - Red platform
+  - Blue platform
+  - Yellow platform
   - 
   - 
   - 
