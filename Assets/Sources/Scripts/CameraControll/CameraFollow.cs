@@ -6,10 +6,16 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] private int _speedOfCamera = 5;
     private int _currentChar = 0;
 
-    private void Start()
+    private void OnEnable()
     {
         Actions.PlayerChoiceOfCharacter += OnPlayerChoice;
     }
+
+    private void OnDisable()
+    {
+        Actions.PlayerChoiceOfCharacter -= OnPlayerChoice;
+    }
+
     private void OnPlayerChoice(int choice)
     {
         _currentChar = choice;

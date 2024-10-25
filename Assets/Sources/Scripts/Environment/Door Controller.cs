@@ -2,9 +2,14 @@ using UnityEngine;
 
 public class DoorController : MonoBehaviour
 {
-    void Start()
+    private void Start()
     {
         Actions.BottonPressed += OnBottonPressed;
+    }
+
+    private void OnDestroy()
+    {
+        Actions.BottonPressed -= OnBottonPressed;
     }
 
     public void OnBottonPressed(string tag, bool isPressed)
